@@ -1,0 +1,24 @@
+[alias]
+	st = status
+	br = branch
+	cp = cherry-pick
+	ci = commit -v
+	cia = commit -v --amend
+	co = checkout
+	sw = switch
+	lg = log --graph --oneline --decorate
+	reroot = rebase -i --root
+	renext = rebase --continue
+	rehard = reset --hard
+	rehead = reset --hard HEAD
+	reneck = reset --hard HEAD^
+	regret = restore --staged
+	showhd = show HEAD
+	lg = log --graph --pretty='format:%C(yellow)%h %Cblue%<(10,trunc)%an %Creset%s%C(auto)%d'
+	dc = diff --cached
+[core]
+	editor = nvim
+[fetch]
+	prune = true
+[rebase]
+	instructionformat = format: %<(10,trunc)%an %s
